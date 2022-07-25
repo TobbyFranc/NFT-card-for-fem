@@ -85,6 +85,7 @@ main {
 
 .descript h1:hover {
   color: aqua;
+  transition: 0.5s;
 }
 
 .descript p {
@@ -164,6 +165,7 @@ span.authorName {
 
 span.authorName:hover {
   color: aqua;
+  transition: 0.5s;
 }
 
 .attribution {
