@@ -1,0 +1,175 @@
+:root {
+  --SoftBlue: hsl(215, 51%, 70%);
+  --Cyan: hsl(178, 10%, 50%);
+  --VeryDarkBluemainBG: hsl(217, 54%, 11%);
+  --VeryDarkBluecardBG: hsl(216, 50%, 16%);
+  --VeryDarkBlueline: hsl(215, 85%, 63%);
+  --White: hsl(0, 0%, 100%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+body {
+  background-color: var(--VeryDarkBluemainBG);
+  font-family: "Outfit", sans-serif;
+}
+
+main {
+  width: 25%;
+  height: 90vh;
+  background-color: var(--VeryDarkBluecardBG);
+  border-radius: 12px;
+  position: absolute;
+  top: 40px;
+  left: 40%;
+  padding: 22px;
+  box-shadow: 8px 8px 30px 20px hsl(217, 79%, 6%);
+}
+
+.img {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  border-radius: 12px;
+  cursor: pointer;
+}
+
+.img::before {
+  content: " \f06e";
+  font-family: "Font Awesome 6 Free";
+  font-weight: 900;
+  font-size: 2em;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  color: var(--White);
+  opacity: 0;
+  z-index: 6;
+  transition: 0.5s;
+}
+
+.img:hover::before {
+  opacity: 1;
+}
+
+.img::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: aqua;
+  opacity: 0;
+  z-index: 4;
+  transition: 0.6s;
+}
+
+.img:hover::after {
+  opacity: 0.5;
+}
+
+.descript h1 {
+  margin: 16px 0;
+  color: var(--White);
+  font-weight: 600;
+  font-size: 1.5em;
+  cursor: pointer;
+}
+
+.descript h1:hover {
+  color: aqua;
+}
+
+.descript p {
+  color: var(--Cyan);
+  margin-top: 16px;
+  font-weight: 400;
+}
+
+/* The styling of Price Time section of card starts below*/
+
+.pricetime {
+  display: flex;
+  align-content: center;
+  justify-content: space-between;
+  height: fit-content;
+  margin: 10px 0;
+  padding: 20px 0;
+  position: relative;
+}
+
+.price,
+.time {
+  display: inline-flex;
+}
+
+.price p {
+  color: aqua;
+  font-weight: 600;
+  font-size: 0.8em;
+  padding-left: 4px;
+}
+
+.time p {
+  color: var(--Cyan);
+  font-weight: 600;
+  font-size: 0.8em;
+  padding-left: 4px;
+}
+
+.pricetime::after {
+  content: "";
+  width: 100%;
+  height: 2px;
+  position: absolute;
+  bottom: 0;
+  background-color: var(--Cyan);
+}
+
+/* Styling of the author section below*/
+
+.author {
+  display: flex;
+  align-content: center;
+  justify-content: flex-start;
+  min-height: 12px;
+  margin: 10px 0;
+}
+
+.author .img2 {
+  width: 50px;
+  height: 50px;
+  border: 2px solid white;
+  border-radius: 50%;
+}
+
+.author p {
+  color: var(--Cyan);
+  margin-top: 20px;
+  margin-left: 12px;
+  font-weight: 400;
+}
+
+span.authorName {
+  color: var(--White);
+}
+
+span.authorName:hover {
+  color: aqua;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  color: var(--White);
+}
+.attribution a {
+  color: aqua;
+  text-decoration: none;
+}
