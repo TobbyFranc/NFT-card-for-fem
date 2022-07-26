@@ -17,16 +17,16 @@
 body {
   background-color: var(--VeryDarkBluemainBG);
   font-family: "Outfit", sans-serif;
+  display: grid;
+  place-content: center;
+  min-height: 100vh
 }
 
 main {
-  width: 25%;
+  max-width: 25rem;
   height: auto;
   background-color: var(--VeryDarkBluecardBG);
   border-radius: 12px;
-  position: absolute;
-  top: 40px;
-  left: 40%;
   padding: 22px;
   box-shadow: 8px 8px 30px 20px hsl(217, 79%, 6%);
 }
