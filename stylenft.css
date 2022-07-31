@@ -45,6 +45,8 @@ main {
   position: absolute;
   display: grid;
   place-content: center;
+  width: 100%;
+  min-height: 100vh;
   color: var(--White);
   opacity: 0;
   z-index: 6;
