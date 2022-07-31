@@ -50,7 +50,7 @@ main {
   color: var(--White);
   opacity: 0;
   z-index: 6;
-  transition: all 0.5s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 
 
@@ -66,7 +66,7 @@ main {
   background-color: aqua;
   opacity: 0;
   z-index: 4;
-  transition: all 0.6s ease-in;
+  transition: all 0.3s ease-in;
 }
 
 .img:hover::after {
@@ -79,7 +79,7 @@ main {
   font-weight: 600;
   font-size: 1.5em;
   cursor: pointer;
-  transition: all 0.5s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 
 .descript h1:hover {
@@ -113,14 +113,14 @@ main {
 .price p {
   color: aqua;
   font-weight: 600;
-  font-size: 0.8em;
+  font-size: 0.9rem;
   padding-left: 4px;
 }
 
 .time p {
   color: var(--Cyan);
   font-weight: 600;
-  font-size: 0.8em;
+  font-size: 0.9rem;
   padding-left: 4px;
 }
 
@@ -144,22 +144,22 @@ main {
 }
 
 .author .img2 {
-  width: 50px;
-  height: 50px;
+  width: 40px;
+  height: 40px;
   border: 2px solid white;
   border-radius: 50%;
 }
 
 .author p {
   color: var(--Cyan);
-  margin-top: 20px;
+  margin-top: 10px;
   margin-left: 12px;
   font-weight: 400;
 }
 
 span.authorName {
   color: var(--White);
-  transition: all 0.5s ease;
+  transition: all 0.3s ease;
 }
 
 span.authorName:hover {
